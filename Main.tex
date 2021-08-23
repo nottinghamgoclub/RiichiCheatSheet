@@ -1,0 +1,309 @@
+\documentclass[8pt,a4paper]{extarticle}
+\usepackage{enumitem}
+\usepackage[document]{ragged2e}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[default]{comfortaa}
+\usepackage{multicol}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{babel}
+\usepackage[margin=0.5cm,landscape]{geometry}
+\usepackage[table, svgnames]{xcolor}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{tabularx}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{booktabs}
+\usepackage[height=1.5\baselineskip]{mahjong}
+\definecolor{ultramarine}{RGB}{0,32,70}
+\newcommand\textbox[1]{\parbox{.45\linewidth}{#1}}
+\titleformat{name=\section,numberless}{\sffamily\normalfont\bfseries\rlap{\color{ultramarine!80}\rule[-0.1ex]{\linewidth}{3ex}\vspace{-3ex}}\sffamily\normalfont\bfseries\color{White}}{}{1.5ex}{}
+\titleformat{name=\subsection,numberless}{\sffamily\normalfont\bfseries\rlap{\color{ultramarine!12}\rule[-0.1ex]{\linewidth}{3ex}\vspace{-3ex}}\sffamily\normalfont\bfseries\color{black}}{}{1.5ex}{}
+\titlespacing*{name=\section,numberless}{0ex}{1ex}{1ex}
+\titlespacing*{name=\subsection,numberless}{0ex}{1ex}{1ex}
+\titlespacing*{name=\subsubsection,numberless}{0ex}{1ex}{1ex}
+\setlength{\parindent}{0.2ex}
+
+\begin{document}
+\begin{multicols*}{5}
+\small
+\section*{Common Yaku}
+\small
+\subsection*{\textbox{Riichi\hfill}\textbox{\hfill 1 han \color{Red}closed}}
+In tenpai with a closed hand, bet 1,000 points. The hand is locked. Gain access to uradora on win.
+\subsection*{\textbox{Tanyao\hfill}\textbox{\hfill 1 han}}
+\small Numbered tiles 2-8 (simples) only.
+\smallskip
+
+\mahjong{234p567m888s345s8m} \enskip \mahjong{8m}
+\subsection*{\textbox{Pinfu\hfill}\textbox{\hfill 1 han \color{Red}closed}}
+Sequences only, a valueless pair (see scoring), and win on a 2-sided wait.
+\smallskip
+
+\mahjong{234p567m78p123s11m} \enskip \mahjong{9p}
+\subsection*{\textbox{Tsumo\hfill}\textbox{\hfill 1 han \color{Red}closed}}
+Win with a closed hand on a tile drawn from the wall.
+\subsection*{\textbox{Ippatsu\hfill}\textbox{\hfill 1 han \color{Red}closed}}
+Having declared riichi, win on or before your next draw. Any interim calls by other players invalidate this yaku.
+\section*{Wind \& Dragon Yaku}
+\small
+\subsection*{\textbox{Yakuhai\hfill}\textbox{\hfill 1 han}}
+A triplet or quad in dragons, seat wind, or round wind.
+\subsection*{\textbox{Shousangen\hfill}\textbox{\hfill 2 han}}
+Two dragon triplets and a dragon pair. Is at least 4 han in practice due to yakuhai.
+\smallskip
+
+\mahjong{23p555z666z123s77z} \enskip \mahjong{4p}
+\subsection*{\textbox{Daisangen\hfill}\textbox{\hfill Yakuman}}
+Three dragon triplets.
+\subsection*{\textbox{Shousuushi\hfill}\textbox{\hfill Yakuman}}
+Three wind triplets and a wind pair.
+\subsection*{\textbox{Daisuushi\hfill}\textbox{\hfill Yakuman}}
+Four wind triplets.
+\section*{Sequence Yaku}
+\small
+\subsection*{\textbox{Sanshoku\hfill}\textbox{\hfill 1 open, 2 closed}}
+The same sequence in 3 different suits.
+\smallskip 
+
+\mahjong{23p234m234s999ms77z} \enskip \mahjong{4p}
+\subsection*{\textbox{Ittsuu\hfill}\textbox{\hfill 1 open, 2 closed}}
+Numbered tiles 1-9 of a single suit.
+\subsection*{\textbox{Iipeikou\hfill}\textbox{\hfill 1 han \color{Red}closed}}
+Two identical sequences.
+\smallskip 
+
+\mahjong{223344s999m33zs77z} \enskip \mahjong{3z}
+\subsection*{\textbox{Ryanpeikou\hfill}\textbox{\hfill 3 han \color{Red}closed}}
+Two iipeikou (each can be in a different suit and contain different numbered tiles).
+\section*{Triplet \& Quad Yaku}
+\small
+\subsection*{\textbox{Toitoi\hfill}\textbox{\hfill 2 han}}
+Every tile group is a triplet.
+\subsection*{\textbox{Sanshoku Doukou\hfill}\textbox{\hfill 2 han}}
+Three groups of triplets of the same numbered tiles.
+\smallskip
+
+\mahjong{333m333s333p56ps77z} \enskip \mahjong{4p}
+\subsection*{\textbox{Sanankou\hfill}\textbox{\hfill 2 han}}
+Three concealed triplets. Calling ron on the third triplet invalidates this yaku.
+\subsection*{\textbox{Suuankou\hfill}\textbox{\hfill Yakuman}}
+Four concealed triplets. Calling ron on the fourth triplet invalidates this yaku.
+\subsection*{\textbox{Sankantsu\hfill}\textbox{\hfill 2 han}}
+Call kan 3 times (the quads may be open or closed).
+\subsection*{\textbox{Suukantsu\hfill}\textbox{\hfill Yakuman}}
+Call kan 4 times (the quads may be open or closed).
+\small
+\section*{Flush Yaku}
+\subsection*{\textbox{Honitsu\hfill}\textbox{\hfill 2 open, 3 closed}}
+The hand contains honour tiles and a single suit.
+\smallskip
+
+\mahjong{111m567m888m44z77z} \enskip \mahjong{4z}
+\subsection*{\textbox{Chinitsu\hfill}\textbox{\hfill 5 open, 6 closed}}
+The hand contains a single suit only.
+\subsection*{\textbox{Ryuuiisou\hfill}\textbox{\hfill Yakuman}}
+Green tiles only (2, 3, 4, 6, 8 souzu or green dragon).
+\smallskip
+
+\mahjong{22344s666s88s666z} \enskip \mahjong{3s}
+\subsection*{\textbox{Chuuren Poutou\hfill}\textbox{\hfill Yakuman \color{Red}closed}}
+The pattern 1112345678999 of one suit plus any other tile of the suit.
+\section*{Terminal \& Honor Yaku}
+\subsection*{\textbox{Chanta\hfill}\textbox{\hfill 1 open, 2  closed}}
+Each group and pair contains one or more terminal or honor tiles.
+\smallskip
+
+\mahjong{123p78p111m111z55z} \enskip \mahjong{9p}
+\subsection*{\textbox{Junchan\hfill}\textbox{\hfill 2 open, 3 closed}}
+Each group and pair contains one or more terminal tiles.
+\subsection*{\textbox{Honroutou\hfill}\textbox{\hfill 2 han}}
+Each group and pair contains terminals or honors only. Scores at least 4 han in practice due to toitoi or chiitoitsu.
+\smallskip
+
+\mahjong{111m999p111s22z55z} \enskip \mahjong{5z}
+\smallbreak
+\subsection*{\textbox{Chinroutou\hfill}\textbox{\hfill Yakuman}}
+Every tile is a terminal.
+\smallskip
+
+\mahjong{999m999s111m111p1s} \enskip \mahjong{1s}
+\subsection*{\textbox{Tsuuiisou\hfill}\textbox{\hfill Yakuman}}
+Every tile is an honor tile.
+\smallskip
+
+\mahjong{111z444z555z666z7z} \enskip \mahjong{7z}
+\section*{Situational \& Other Yaku}
+\subsection*{\textbox{Chiitoitsu\hfill}\textbox{\hfill 2 han}}
+Seven pairs. No pair may be identical.
+\smallskip
+
+\mahjong{22m66m88m33p99p11s6z} \enskip \mahjong{6z}
+\subsection*{\textbox{Haitei\hfill}\textbox{\hfill 1 han}}
+Win by tsumo with the last tile drawn from the live wall.
+\subsection*{\textbox{Houtei\hfill}\textbox{\hfill 1 han}}
+Win by ron with the last discard of the hand.
+\subsection*{\textbox{Rinshan\hfill}\textbox{\hfill 1 han}}
+Win from a tile drawn from the dead wall.
+\subsection*{\textbox{Chankan\hfill}\textbox{\hfill 1 han}}
+If an opponent upgrades an open triplet to a quad from a tile they drew from the wall, you may call ron if that 4th tile completes your hand, scoring this yaku.
+\subsection*{\textbox{Tenhou\hfill}\textbox{\hfill Yakuman}}
+As the dealer win by tsumo on the first tile you draw. In this case no tiles will have been discarded by any player.
+\subsection*{\textbox{Chiihou\hfill}\textbox{\hfill Yakuman}}
+As a non-dealer, complete your hand by tsumo on the first tile you draw. Any interim calls invalidate this yaku.
+\subsection*{\textbox{Nagashi Mangan\hfill}\textbox{\hfill Mangan}}
+On the hand reaching exhaustive draw, score this yaku only if your discards are terminals or honors only, and no tiles from your discards have been called.
+\subsection*{\textbox{Kokushi Musou\hfill}\textbox{\hfill Yakuman}}
+The hand consists of 1, 9 of each suit, one copy of each wind and dragon, and any other matching tile.
+\smallskip
+
+\mahjong{19m19p19s1234567z} \enskip \mahjong{1s}
+\section*{Dora Indicators}
+Dora indicators point to the actual dora, one tile over to the right.
+
+\smallskip
+\mahjong{1p} \hspace{0.16em} \mahjong{2p} \hspace{0.16em} \mahjong{3p} \hspace{0.16em} \mahjong{4p} \hspace{0.16em} \mahjong{5p} \hspace{0.16em} \mahjong{6p} \hspace{0.16em} \mahjong{7p} \hspace{0.16em} \mahjong{8p} \hspace{0.16em} \mahjong{9p} \hspace{0.16em} \mahjong{1p} \\
+
+\smallskip
+\mahjong{1z} \hspace{0.16em} \mahjong{2z} \hspace{0.16em} \mahjong{3z} \hspace{0.16em} \mahjong{4z} \hspace{0.16em} \mahjong{1z} \\
+
+\smallskip
+\mahjong{5z} \hspace{0.16em} \mahjong{6z} \hspace{0.16em} \mahjong{7z} \hspace{0.16em} \mahjong{5z}
+\smallbreak
+\section*{Score Calculation}
+\small
+Use the Payment Table to lookup the amount owed. You can also calculate amount owed manually. For 1-4 han:
+
+\vspace{-0.6em}
+\normalsize
+\[
+BaseScore = 4 \times Fu \times 2^{Han}
+\]
+\small
+\vspace{-1.2em}
+
+If BaseScore $\geq$2,000, the hand is scored as mangan. Base scores for 5 han and higher are shown in \color{Red}red \color{Black}in the Payment Table.
+
+\smallskip 
+
+Players owe the base score rounded up to nearest 100. If paying dealer, double the base score and round up. If paying by ron, add up all payments owed and pay for all.
+
+\section*{Payment Table}
+Pay the following amounts according to:
+\begin{itemize}[nolistsep,leftmargin=1em]
+    \item \textbf{TN} Tsumo, pay non-dealer to non-dealer.
+    \item \textbf{T} Tsumo, pay from dealer to non-dealer, or from non-dealer to dealer.
+    \item \textbf{RN} Ron, payment to non-dealer.
+    \item \textbf{RD} Ron, payment to dealer.
+\end{itemize}
+\small
+\begin{tabularx}{\columnwidth}{llXXXX}
+\toprule
+Han & Fu & TN & T & RN & RD \\ \midrule
+1 & 30 & 300 & 500 & 1k & 1.5k \\
+1 & 40 & 400 & 700 & 1.3k & 2k \\
+1 & 50 & 400 & 800 & 1.6k & 2.4k \\
+1 & 60 & 500 & 1k & 2k & 2.9k \\
+1 & 70 & 600 & 1.2k & 2.3k & 3.4k \\
+1 & 80 & 700 & 1.3k & 2.6k & 3.9k \\
+1 & 90 & 800 & 1.5k & 2.9k & 4.4k \\
+1 & 100 & 800 & 1.6k & 3.2k & 4.8k \\
+1 & 110 & 900 & 1.8k & 3.6k & 5.3k \\
+2 & 20 & 400 & 700 & - & - \\
+2 & 25 & 400 & 800 & 1.6k & 2.4k \\
+2 & 30 & 500 & 1k & 2k & 2.9k \\
+2 & 40 & 700 & 1.3k & 2.6k & 3.9k \\
+2 & 50 & 800 & 1.6k & 3.2k & 4.8k \\
+2 & 60 & 1k & 2k & 3.9k & 5.8k \\
+2 & 70 & 1.2k & 2.3k & 4.5k & 6.8k \\
+2 & 80 & 1.3k & 2.6k & 5.2k & 7.7k \\
+2 & 90 & 1.5k & 2.9k & 5.8k & 8.7k \\
+2 & 100 & 1.6k & 3.2k & 6.4k & 9.6k \\
+2 & 110 & 1.8k & 3.6k & 7.1k & 10.6k \\
+3 & 20 & 700 & 1.3k & - & - \\
+3 & 25 & 800 & 1.6k & 3.2k & 4.8k \\
+3 & 30 & 1k & 2k & 3.9k & 5.8k \\
+3 & 40 & 1.3k & 2.6k & 5.2k & 7.7k \\
+3 & 50 & 1.6k & 3.2k & 6.4k & 9.6k \\
+3 & 60 & 2k & 3.9k & 7.7k & 11.6k \\
+3 & 70 & \multicolumn{4}{l}{Mangan} \\
+4 & 20 & 1.3k & 2.6k & - & - \\
+4 & 25 & 1.6k & 3.2k & 6.4k & 9.6k \\
+4 & 30 & 2k & 3.9k & 7.7k & 11.6k \\
+4 & 40 & \multicolumn{4}{l}{Mangan} \\ \midrule
+\multicolumn{2}{l}{5 Mangan} & \textcolor{red}{2k} & 4k & 8k & 12k \\
+\multicolumn{2}{l}{6 Haneman} & \textcolor{red}{3k} & 6k & 12k & 18k \\
+\multicolumn{2}{l}{8 Baiman} & \textcolor{red}{4k} & 8k & 16k & 24k \\
+\multicolumn{2}{l}{11 Sanbaiman} & \textcolor{red}{6k} & 12k & 24k & 36k \\
+\multicolumn{2}{l}{13 Yakuman} & \textcolor{red}{8k} & 16k & 32k & 48k \\ \bottomrule
+\end{tabularx}
+\smallbreak
+
+\section*{Fu}
+\subsection*{Special Hands}
+\small
+\begin{tabularx}{\columnwidth}{lX}
+\toprule
+Hand & Final Fu Value \\ \midrule
+Chiitoitsu & 25 \\
+Tsumo \& Pinfu & 20 \\
+Open Pinfu & 30 \\ \bottomrule
+\end{tabularx}
+
+\subsection*{Triplets \& Quads}
+\small
+\begin{tabularx}{\columnwidth}{llll}
+\toprule
+Type & Status & Simple & Hon/Term \\ \midrule
+Triplet & Open & 2 & 4 \\
+Triplet & Closed & 4 & 8 \\
+Quad & Open & 8 & 16 \\
+Quad & Closed & 16 & 32 \\ \bottomrule
+\end{tabularx}
+\subsection*{Waits}
+\small
+\begin{tabularx}{\columnwidth}{lX}
+\toprule
+Wait Pattern & Score \\ \midrule
+Ryanmen (open / 2-sided wait) & 0 \\
+Shanpon (double pair wait) & 0 \\
+Other patterns & 2 \\ \bottomrule
+\end{tabularx}
+\subsection*{Pairs}
+\small
+\begin{tabularx}{\columnwidth}{lX}
+\toprule
+Type & Score \\ \midrule
+Dragon & 2 \\
+Seat Wind & 2 \\ 
+Round Wind & 2 \\
+Seat \& Round Wind & 4 \\ \bottomrule
+\end{tabularx}
+\subsection*{Win Mechanisms}
+\begin{tabularx}{\columnwidth}{lX}
+\toprule
+Mechanism & Score \\ \midrule
+Tsumo & 2 \\
+Closed Ron & 10 \\
+\bottomrule
+\end{tabularx}
+\smallbreak
+
+To calculate fu, refer to the above tables in carrying out the following procedure:
+\begin{itemize}[nolistsep,leftmargin=1em]
+    \item If your hand is a special hand, it scores the final fu value. Otherwise:
+    \item Start with 20 fu.
+    \item Add bonuses for triplets, quads, waits, pairs, and win mechanism.
+    \item Round up to nearest 10.
+\end{itemize}
+Open pinfu is the term for a valuless open hand that calls ron. Its fu value is bumped to 30 as a special case.
+\section*{Setup Reminders}
+
+\includegraphics[width=\linewidth]{Capture.PNG}
+
+East (dealer) rolls 6 \& counts anticlockwise starting with themselves, landing on South. South counts 6 tiles from their right \& breaks the wall \textbf{after} 6. They count back 3 \& flip the dora. Dealer takes the first 4 tiles after the break; the player to their right takes the next 4. Tiles are taken clockwise, the order of players is anti-clockwise. After each player has 12, dealer takes tiles 1 \& 5, the rest take tiles 2, 3 \& 4.
+
+
+\end{multicols*}
+\end{document}

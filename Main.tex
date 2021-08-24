@@ -69,7 +69,7 @@ The same sequence in 3 different suits.
 
 \mahjong{23p234m234s999ms77z} \enskip \mahjong{4p}
 \subsection*{\textbox{Ittsuu\hfill}\textbox{\hfill 1 open, 2 closed}}
-Numbered tiles 1-9 of a single suit.
+Sequences 123, 456, 789 in a single suit.
 \subsection*{\textbox{Iipeikou\hfill}\textbox{\hfill 1 han \color{Red}closed}}
 Two identical sequences.
 \smallskip 
@@ -148,10 +148,10 @@ Win by ron with the last discard of the hand.
 Win from a tile drawn from the dead wall.
 \subsection*{\textbox{Chankan\hfill}\textbox{\hfill 1 han}}
 If an opponent upgrades an open triplet to a quad from a tile they drew from the wall, you may call ron if that 4th tile completes your hand, scoring this yaku.
-\subsection*{\textbox{Tenhou\hfill}\textbox{\hfill Yakuman}}
-As the dealer win by tsumo on the first tile you draw. In this case no tiles will have been discarded by any player.
-\subsection*{\textbox{Chiihou\hfill}\textbox{\hfill Yakuman}}
-As a non-dealer, complete your hand by tsumo on the first tile you draw. Any interim calls invalidate this yaku.
+\subsection*{\textbox{Tenhou/Chiihou\hfill}\textbox{\hfill Yakuman}}
+As the dealer/non-dealer, win by tsumo on the first tile you draw. Interim calls invalidate this yaku.
+\subsection*{\textbox{Daburu Riichi\hfill}\textbox{\hfill 2 han \color{Red}closed}}
+If you declare riichi with your first drawn tile, your riichi is worth 2 han instead of 1 han. Interim calls invalidate this yaku.
 \subsection*{\textbox{Nagashi Mangan\hfill}\textbox{\hfill Mangan}}
 On the hand reaching exhaustive draw, score this yaku only if your discards are terminals or honors only, and no tiles from your discards have been called.
 \subsection*{\textbox{Kokushi Musou\hfill}\textbox{\hfill Yakuman}}
@@ -197,6 +197,7 @@ Pay the following amounts according to:
     \item \textbf{RN} Ron, payment to non-dealer.
     \item \textbf{RD} Ron, payment to dealer.
 \end{itemize}
+\smallskip
 \small
 \begin{tabularx}{\columnwidth}{llXXXX}
 \toprule
@@ -211,7 +212,7 @@ Han & Fu & TN & T & RN & RD \\ \midrule
 1 & 100 & 800 & 1.6k & 3.2k & 4.8k \\
 1 & 110 & 900 & 1.8k & 3.6k & 5.3k \\
 2 & 20 & 400 & 700 & - & - \\
-2 & 25 & 400 & 800 & 1.6k & 2.4k \\
+2 & 25 & - & - & 1.6k & 2.4k \\
 2 & 30 & 500 & 1k & 2k & 2.9k \\
 2 & 40 & 700 & 1.3k & 2.6k & 3.9k \\
 2 & 50 & 800 & 1.6k & 3.2k & 4.8k \\
@@ -238,7 +239,6 @@ Han & Fu & TN & T & RN & RD \\ \midrule
 \multicolumn{2}{l}{11 Sanbaiman} & \textcolor{red}{6k} & 12k & 24k & 36k \\
 \multicolumn{2}{l}{13 Yakuman} & \textcolor{red}{8k} & 16k & 32k & 48k \\ \bottomrule
 \end{tabularx}
-\smallbreak
 
 \section*{Fu}
 \subsection*{Special Hands}
@@ -250,7 +250,7 @@ Chiitoitsu & 25 \\
 Tsumo \& Pinfu & 20 \\
 Open Pinfu & 30 \\ \bottomrule
 \end{tabularx}
-
+\smallbreak
 \subsection*{Triplets \& Quads}
 \small
 \begin{tabularx}{\columnwidth}{llll}
